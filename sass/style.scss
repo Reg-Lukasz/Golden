@@ -200,7 +200,7 @@ a {
     background: #f7f7f7;
 }
 
-.row-porfolio {
+.row-portfolio {
     gap: 35px;
     padding-top: 35px;
 }
@@ -272,4 +272,55 @@ a {
 
 .media:hover {
     background: $color-main;
+}
+
+/* Media */
+
+@media (max-width: 1140px) {
+
+    .container {
+        padding: 0 100px;
+    }
+
+    .col-nav-menu {
+        display: none;
+    }
+
+    .header-subtitle {
+        font-size: 30px;
+    }
+
+    .header-title {
+        font-size: 60px;
+    }
+
+    .col-footer {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .col-services {
+        flex: 0 0 100%;
+    }
+
+    .col-portfolio {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .col-copy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col-footer-media {
+        padding: 0;
+        margin-bottom: 10px;
+    }
 }
