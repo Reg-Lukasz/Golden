@@ -21,7 +21,21 @@ body {
 }
 
 section {
-    padding: 100px 0;
+    padding: 120px 0;
+}
+
+.section-title {
+    font-size: 40px;
+    color: #222222;
+    text-align: center;
+    margin: 0;
+}
+
+.section-text {
+    font-size: 16px;
+    font-family: $font-submain;
+    font-style: italic;
+    text-align: center;
 }
 
 a {
@@ -29,9 +43,8 @@ a {
 }
 
 .container {
-    max-width: 1470px;
     margin: 0 auto;
-    padding: 0 90px;
+    padding: 0 230px;
 }
 
 .row {
@@ -88,7 +101,7 @@ a {
 /* Header */
 
 .header {
-    height: 100vh;
+    height: 700px;
     background-image: url(../images/header-bg.jpg);
     background-repeat: no-repeat, repeat;
     background-position: center;
@@ -96,7 +109,7 @@ a {
 }
 
 .header-inner {
-    height: 100vh;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,4 +152,43 @@ a {
 
 .header-button:hover {
     background: $color-submain;
+}
+
+/* Services */
+
+.col-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    width: 73px;
+    height: 73px;
+    border: 3px solid $color-main;
+    border-radius: 50%;
+    
+    i {
+        font-size: 35px;
+        color: $color-main;
+    }
+}
+
+.service-title {
+    color: #222222;
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+}
+
+.service-text {
+    font-family: $font-submain;
+    width: 75%;
+    margin: 0;
 }
