@@ -1,10 +1,10 @@
 /* Variables */
 $color-main: #fed136;
-$color-submain: #e0b60c;
+$color-submain: #efc325;
 $text-color-main: #222222;
 $text-color-submain: #777777;
 $font-main: "Montserrat", sans-serif;
-$font-submain: "Roboto Slab", serif;
+$font-submain: "Roboto Serif", serif;
 $transition: .3s all;
 
 /* Global */
@@ -83,4 +83,60 @@ a {
     a:hover {
         color: $color-main;
     }
+}
+
+/* Header */
+
+.header {
+    height: 100vh;
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-inner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-subtitle {
+    font-family: $font-submain;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.header-title {
+    font-family: $font-main;
+    font-size: 75px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin: 30px 0;
+}
+
+.header-button {
+    padding: 20px 50px;
+    border: none;
+    border-radius: 3px;
+    background: $color-main;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    transition: $transition;
+}
+
+.header-button:hover {
+    background: $color-submain;
 }
