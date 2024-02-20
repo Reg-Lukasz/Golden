@@ -1,0 +1,86 @@
+/* Variables */
+$color-main: #fed136;
+$color-submain: #e0b60c;
+$text-color-main: #222222;
+$text-color-submain: #777777;
+$font-main: "Montserrat", sans-serif;
+$font-submain: "Roboto Slab", serif;
+$transition: .3s all;
+
+/* Global */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font-main;
+    font-size: 14px;
+    color: $text-color-submain;
+}
+
+section {
+    padding: 100px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0 90px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+}
+
+/* Navbar */
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.col-nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.col-nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-item {
+    display: inline;
+
+    a {
+        color: #fff;
+        text-transform: uppercase;
+        transition: $transition;
+    }
+
+    a:hover {
+        color: $color-main;
+    }
+}
